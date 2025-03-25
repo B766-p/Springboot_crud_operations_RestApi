@@ -39,6 +39,7 @@ category-product-api_Crud/
 │       └── java/                                                # Unit/Integration tests (optional)
 │
 ├── pom.xml                                                     # Maven dependencies and build config
+```
 ## 📦 Technologies Used
 
 - Java 17
