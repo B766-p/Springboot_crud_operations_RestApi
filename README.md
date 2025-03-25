@@ -3,7 +3,42 @@
 A Spring Boot application that demonstrates CRUD operations for **Categories** and **Products** with a one-to-many relationship using RESTful APIs, JPA, Hibernate, MySQL, and server-side pagination.
 
 ---
+# 🗂️ Maven Project Architecture
 
+```
+category-product-api_Crud/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── crud/
+│   │   │           └── categoryproductapi/
+│   │   │               ├── CategoryProductApiApplication.java   # Main Spring Boot class
+│   │   │
+│   │   │               ├── controller/
+│   │   │               │   ├── CategoryController.java          # Category endpoints
+│   │   │               │   └── ProductController.java           # Product endpoints
+│   │   │
+│   │   │               ├── entity/
+│   │   │               │   ├── Category.java                    # Category entity
+│   │   │               │   └── Product.java                     # Product entity
+│   │   │
+│   │   │               ├── repository/
+│   │   │               │   ├── CategoryRepository.java          # JPA repository for Category
+│   │   │               │   └── ProductRepository.java           # JPA repository for Product
+│   │   │
+│   │   │               └── service/
+│   │   │                   ├── CategoryService.java             # Interface for category service
+│   │   │                   └── ProductService.java              # Interface for product service
+│   │
+│   │   └── resources/
+│   │       ├── application.properties                           # DB config, port, JPA settings
+│   │       └── static/                                          # Static files (if any)
+│   │
+│   └── test/
+│       └── java/                                                # Unit/Integration tests (optional)
+│
+├── pom.xml                                                     # Maven dependencies and build config
 ## 📦 Technologies Used
 
 - Java 17
