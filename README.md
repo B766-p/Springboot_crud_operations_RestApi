@@ -57,15 +57,21 @@ category-product-api_Crud/
 ## ⚙️ Setup & Run
 
 ### 1. Clone the Repository
-```bash
+```
+---
 git clone https://github.com/B766-p/Springboot_crud_operations_RestApi.git
 cd category-product-api_Crud
+```
 ### 2.⚙️ Configure Database
-
+```
+---
 Update your database credentials in `src/main/resources/application.properties`:
 spring.datasource.username=your_db_user
 spring.datasource.password=your_db_password
+```
 🚀 Build and Run
+```
+---
 Way 1: Using Maven Command
 mvn spring-boot:run
 Way 2:Using  execute the main() method from your CategoryProductApiApplication class present in com.crud.categoryproductapi:
@@ -82,7 +88,10 @@ Step 1:C:\Users\DELL>netstat -ano | findstr :8051
   TCP    [::]:8051              [::]:0                 LISTENING       4616
 Step 2:C:\Users\DELL>taskkill /PID 4616 /F
 SUCCESS: The process with PID 4616 has been terminated.
+```
 📘 API Endpoints
+```
+---
 ## 🗂️ Category CRUD APIs
 
 | Method | Endpoint                   | Description             |
@@ -104,12 +113,17 @@ SUCCESS: The process with PID 4616 has been terminated.
 | GET    | /api/products/{id}         | Get product by ID (with category)     |
 | PUT    | /api/products/{id}         | Update product by ID                  |
 | DELETE | /api/products/{id}         | Delete product by ID                  |
+```
 🔗 Category-Product Relationship
+```
+---
 One Category can have many Products (One-to-Many).
 
-Each Product belongs to one Category (Many-to-One).  
+Each Product belongs to one Category (Many-to-One).
+```  
 # 🧩 Annotation Reference (One-liner Explanations)
-
+```
+---
 | Annotation                         | Description                                                                 |
 |------------------------------------|-----------------------------------------------------------------------------|
 | `@SpringBootApplication`           | Marks the main class as a Spring Boot application entry point.             |
@@ -152,3 +166,4 @@ Each Product belongs to one Category (Many-to-One).
 | `@Autowired`                         | Automatically injects required beans by type from the Spring container.     |
 | `@PathVariable`                      | Binds a method parameter to a path variable in the URL.                     |
 | `@RequestBody`                       | Binds the body of a request to a method parameter for POST/PUT methods.     |
+```
