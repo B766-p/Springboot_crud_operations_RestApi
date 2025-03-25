@@ -47,20 +47,27 @@ Step 1:C:\Users\DELL>netstat -ano | findstr :8051
 Step 2:C:\Users\DELL>taskkill /PID 4616 /F
 SUCCESS: The process with PID 4616 has been terminated.
 📘 API Endpoints
-🗂️ Category CRUD APIs
-Method	  |         Endpoint	     |   Description
-GET	      | /api/categories?page=0 |   Get paginated categories
-POST	    |    /api/categories	   |   Create a category
-GET	      | /api/categories/{id}	 |   Get category by ID
-PUT	      | /api/categories/{id}	 |   Update category by ID
-DELETE	  |  /api/categories/{id}  |	 Delete category by ID
-📦 Product CRUD APIs
-Method	  |         Endpoint	     |   Description
-GET	      |  /api/products?page=0	 |   Get paginated products
-POST	    |  /api/products	       |   Create a product
-GET	      |  /api/products/{id}	   |   Get product by ID (with category)
-PUT	      |  /api/products/{id}	   |   Update product by ID
-DELETE	  |  /api/products/{id}	   |   Delete product by ID
+## 🗂️ Category CRUD APIs
+
+| Method | Endpoint                   | Description             |
+|--------|----------------------------|-------------------------|
+| GET    | /api/categories?page=0     | Get paginated categories|
+| POST   | /api/categories            | Create a category       |
+| GET    | /api/categories/{id}       | Get category by ID      |
+| PUT    | /api/categories/{id}       | Update category by ID   |
+| DELETE | /api/categories/{id}       | Delete category by ID   |
+
+---
+
+## 📦 Product CRUD APIs
+
+| Method | Endpoint                   | Description                           |
+|--------|----------------------------|---------------------------------------|
+| GET    | /api/products?page=0       | Get paginated products                |
+| POST   | /api/products              | Create a product                      |
+| GET    | /api/products/{id}         | Get product by ID (with category)     |
+| PUT    | /api/products/{id}         | Update product by ID                  |
+| DELETE | /api/products/{id}         | Delete product by ID                  |
 🔗 Category-Product Relationship
 One Category can have many Products (One-to-Many).
 
